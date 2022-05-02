@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(59, 62, 110, 0.901);
+  text-align: center;
+  box-shadow: 7px 3px 13px 0px rgba(0, 0, 0, 0.353);
+}
+
+.nav--top {
+  margin: 15px 0 0 0;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.h1-handwriting {
+  font-family: 'Alex Brush', cursive;
+  font-size: 80px;
+  color: rgb(147, 158, 255);
+  margin-top: 0;
+}
+
+.nav--bottom {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav-icon {
+  height: 30px;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 170px;
+  padding: 20px 0;
+}
+
+nav div:active {
+  background-color: rgba(255, 255, 255, 0.422);
+}
+
+@media (min-width: 1000px) {
+  .nav--top {
+    height: 120px;
+  }
+
+  .h1-handwriting {
+    font-size: 120px;
+  }
+}
